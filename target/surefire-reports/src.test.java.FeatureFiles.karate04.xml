@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/karate04.feature" skipped="0" tests="1" time="0.059776">
+  <testcase classname="src.test.java.FeatureFiles.karate04" name="validation of xml 2" time="0.059776">
+    <system-out>Given def xml = ........................................................... passed
+* print xml ............................................................... passed
+* match xml/info/id == 101 ................................................ passed
+* match xml.info.id == "101" .............................................. passed
+* match xml/info/tool[2] contains "&lt;name&gt;IntelliJ&lt;/name&gt;&lt;version&gt;2020.2&lt;/version&gt;" . passed</system-out>
+  </testcase>
+</testsuite>

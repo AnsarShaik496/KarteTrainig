@@ -1,0 +1,16 @@
+<testsuite failures="1" name="src/test/java/FeatureFiles/testFixurexample.feature" skipped="0" tests="1" time="0.002981">
+  <testcase classname="src.test.java.FeatureFiles.testFixurexample" name="Test case 1" time="0.002981">
+    <failure message="-unknown-:14 - evaluation (js) failed: function {&#10;karate.log(&quot;from after Feature&quot;);&#10;}, javax.script.ScriptException: &lt;eval&gt;:1:9 Expected ( but found {&#13;&#10;function {&#13;&#10;         ^ in &lt;eval&gt; at line number 1 at column number 9&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* configure afterFeature = ................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:14 - evaluation (js) failed: function {
+karate.log("from after Feature");
+}, javax.script.ScriptException: &lt;eval&gt;:1:9 Expected ( but found {&#13;
+function {&#13;
+         ^ in &lt;eval&gt; at line number 1 at column number 9
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.* configure afterFeature = (-unknown-:14)&#13;
+
+* print "Test 1" .......................................................... skipped</failure>
+  </testcase>
+</testsuite>

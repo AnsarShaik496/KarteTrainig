@@ -1,0 +1,7 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/karateDB.feature" skipped="0" tests="1" time="0.02619">
+  <testcase classname="src.test.java.FeatureFiles.karateDB" name="Select statement test case" time="0.02619">
+    <system-out>* def db = Java.type('misc.MyDbUtil'); .................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed</system-out>
+  </testcase>
+</testsuite>

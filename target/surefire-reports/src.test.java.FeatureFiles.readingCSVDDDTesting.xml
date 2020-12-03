@@ -1,0 +1,92 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/readingCSVDDDTesting.feature" skipped="0" tests="6" time="0.017956">
+  <testcase classname="src.test.java.FeatureFiles.readingCSVDDDTesting" name="CSV DDT Testing" time="0.007413">
+    <system-out>* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "1 ,shaik ,33 ,1988" .............................................. passed
+* def json1 = {"last_name" : shaik} ....................................... passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.readingCSVDDDTesting" name="CSV DDT Testing" time="0.004775">
+    <system-out>* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "1 ,shaik ,33 ,1988" .............................................. passed
+* def json1 = {"last_name" : shaik} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "2 ,shahank ,22 ,1999" ............................................ passed
+* def json1 = {"last_name" : shahank} ..................................... passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.readingCSVDDDTesting" name="CSV DDT Testing" time="0.004385">
+    <system-out>* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "1 ,shaik ,33 ,1988" .............................................. passed
+* def json1 = {"last_name" : shaik} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "2 ,shahank ,22 ,1999" ............................................ passed
+* def json1 = {"last_name" : shahank} ..................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "3 ,kumar ,10 ,2000" .............................................. passed
+* def json1 = {"last_name" : kumar} ....................................... passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.readingCSVDDDTesting" name="CSV DDT Testing" time="0.000328">
+    <system-out>* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "1 ,shaik ,33 ,1988" .............................................. passed
+* def json1 = {"last_name" : shaik} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "2 ,shahank ,22 ,1999" ............................................ passed
+* def json1 = {"last_name" : shahank} ..................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "3 ,kumar ,10 ,2000" .............................................. passed
+* def json1 = {"last_name" : kumar} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* def json1 = {"last_name" : &lt;custname&gt;} .................................. passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.readingCSVDDDTesting" name="CSV DDT Testing" time="0.000441">
+    <system-out>* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "1 ,shaik ,33 ,1988" .............................................. passed
+* def json1 = {"last_name" : shaik} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "2 ,shahank ,22 ,1999" ............................................ passed
+* def json1 = {"last_name" : shahank} ..................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "3 ,kumar ,10 ,2000" .............................................. passed
+* def json1 = {"last_name" : kumar} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* def json1 = {"last_name" : &lt;custname&gt;} .................................. passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* def json1 = {"last_name" : &lt;custname&gt;} .................................. passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.readingCSVDDDTesting" name="CSV DDT Testing" time="0.000614">
+    <system-out>* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "1 ,shaik ,33 ,1988" .............................................. passed
+* def json1 = {"last_name" : shaik} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "2 ,shahank ,22 ,1999" ............................................ passed
+* def json1 = {"last_name" : shahank} ..................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* print "3 ,kumar ,10 ,2000" .............................................. passed
+* def json1 = {"last_name" : kumar} ....................................... passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* def json1 = {"last_name" : &lt;custname&gt;} .................................. passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* def json1 = {"last_name" : &lt;custname&gt;} .................................. passed
+* print json1 ............................................................. passed
+* def data = read('../PayloadData/Data.csv') .............................. passed
+* def json1 = {"last_name" : &lt;custname&gt;} .................................. passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+</testsuite>

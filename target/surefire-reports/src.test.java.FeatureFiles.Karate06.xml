@@ -1,0 +1,16 @@
+<testsuite failures="1" name="src/test/java/FeatureFiles/Karate06.feature" skipped="0" tests="1" time="0.873163">
+  <testcase classname="src.test.java.FeatureFiles.Karate06" name="REST Api testing" time="0.873163">
+    <failure message="Karate06.feature:10 - status code was: 500, expected: 200, response time: 483, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: Missing parameter: Celsius.&#13;&#10;">Given url "https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit" . passed
+And header Content-Type = "application/x-www-form-urlencoded" ............. passed
+And request "Celsius" ..................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Karate06.feature:10 - status code was: 500, expected: 200, response time: 483, url: https://www.w3schools.com/xml/tempconvert.asmx/CelsiusToFahrenheit, response: Missing parameter: Celsius.&#13;
+&#13;
+	at ✽.Then status 200 (Karate06.feature:10)&#13;
+
+And match response contains "104" ......................................... skipped</failure>
+  </testcase>
+</testsuite>

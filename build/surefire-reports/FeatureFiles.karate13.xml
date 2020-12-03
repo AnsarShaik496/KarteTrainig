@@ -1,0 +1,26 @@
+<testsuite failures="0" name="FeatureFiles/karate13.feature" skipped="0" tests="3" time="0.024891">
+  <testcase classname="FeatureFiles.karate13" name="Static variable test case" time="0.011851">
+    <system-out>* def constants = Java.type("misc.AutomationContents"); ................... passed
+* print constants.devURL .................................................. passed
+* print constants.getDevURL() ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate13" name="Non static variable TC" time="0.009146">
+    <system-out>* def constants = Java.type("misc.AutomationContents"); ................... passed
+* print constants.devURL .................................................. passed
+* print constants.getDevURL() ............................................. passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print env1() ............................................................ passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate13" name="Duplicate Non static variable TC" time="0.003893">
+    <system-out>* def constants = Java.type("misc.AutomationContents"); ................... passed
+* print constants.devURL .................................................. passed
+* print constants.getDevURL() ............................................. passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print env1() ............................................................ passed
+* def env1 = .............................................................. passed
+* def qaUrl = call env1 ................................................... passed
+* print qaUrl ............................................................. passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,85 @@
+<testsuite failures="0" name="FeatureFiles/writingResponseFile.feature" skipped="0" tests="4" time="0.289578">
+  <testcase classname="FeatureFiles.writingResponseFile" name="Example 1" time="0.080949">
+    <system-out>* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* lib.writeToFile("res.json", response) ................................... passed
+* def res1 = read("classpath:res.json") ................................... passed
+* print res1 .............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.writingResponseFile" name="Example 2" time="0.090061">
+    <system-out>* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* lib.writeToFile("res.json", response) ................................... passed
+* def res1 = read("classpath:res.json") ................................... passed
+* print res1 .............................................................. passed
+* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res2 = get response $.data .......................................... passed
+* lib.writeToFile("res2.json", res2) ...................................... passed
+* def res = read("classpath:res2.json") ................................... passed
+* print res ............................................................... passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.writingResponseFile" name="Parsing Response Data to JsonMessage Or Files" time="0.112078">
+    <system-out>* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* lib.writeToFile("res.json", response) ................................... passed
+* def res1 = read("classpath:res.json") ................................... passed
+* print res1 .............................................................. passed
+* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res2 = get response $.data .......................................... passed
+* lib.writeToFile("res2.json", res2) ...................................... passed
+* def res = read("classpath:res2.json") ................................... passed
+* print res ............................................................... passed
+* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response.data.last_name ........................................... passed
+* def name = response.data.last_name ...................................... passed
+* def json1 = {"lastName" : #(name)} ...................................... passed
+* print json1 ............................................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.writingResponseFile" name="Paramterized value to Files" time="0.00649">
+    <system-out>* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* lib.writeToFile("res.json", response) ................................... passed
+* def res1 = read("classpath:res.json") ................................... passed
+* print res1 .............................................................. passed
+* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def res2 = get response $.data .......................................... passed
+* lib.writeToFile("res2.json", res2) ...................................... passed
+* def res = read("classpath:res2.json") ................................... passed
+* print res ............................................................... passed
+* def lib = Java.type('misc.Utils') ....................................... passed
+Given url "https://reqres.in/api/users/2" ................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response.data.last_name ........................................... passed
+* def name = response.data.last_name ...................................... passed
+* def json1 = {"lastName" : #(name)} ...................................... passed
+* print json1 ............................................................. passed
+* def custId = 1234 ....................................................... passed
+* def res = read("classpath:res3.json") ................................... passed
+* print res ............................................................... passed</system-out>
+  </testcase>
+</testsuite>

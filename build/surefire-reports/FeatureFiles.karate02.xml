@@ -1,0 +1,24 @@
+<testsuite failures="0" name="FeatureFiles/karate02.feature" skipped="0" tests="2" time="0.022056">
+  <testcase classname="FeatureFiles.karate02" name="demo of test case 1" time="0.014038">
+    <system-out>Given def a = 10 .......................................................... passed
+And def b = 20 ............................................................ passed
+When def c = a+b .......................................................... passed
+Then assert c == 30 ....................................................... passed
+And print "c value is ", c ................................................ passed
+And karate.log("Test ENded") .............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate02" name="demo of test case 2" time="0.008018">
+    <system-out>Given def a = 10 .......................................................... passed
+And def b = 20 ............................................................ passed
+When def c = a+b .......................................................... passed
+Then assert c == 30 ....................................................... passed
+And print "c value is ", c ................................................ passed
+And karate.log("Test ENded") .............................................. passed
+Given def a = 10 .......................................................... passed
+* def b = 20 .............................................................. passed
+When def c = a*b .......................................................... passed
+Then assert c == 200 ...................................................... passed
+* print "c value is ", c .................................................. passed
+* karate.log("Test END") .................................................. passed</system-out>
+  </testcase>
+</testsuite>

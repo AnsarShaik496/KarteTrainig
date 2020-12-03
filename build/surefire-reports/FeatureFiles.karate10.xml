@@ -1,0 +1,26 @@
+<testsuite failures="1" name="FeatureFiles/karate10.feature" skipped="0" tests="2" time="0.171615">
+  <testcase classname="FeatureFiles.karate10" name="url and path usage test case 1" time="0.081405">
+    <system-out>Given url "https://reqres.in/" ............................................ passed
+And path "/api/users?page=2" .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == 1 .............................................. passed</system-out>
+  </testcase>
+  <testcase classname="FeatureFiles.karate10" name="url and path usage test case 2" time="0.09021">
+    <failure message="karate10.feature:17 - path: $.page, actual: 2, expected: 1, reason: not equal (Integer)">Given url "https://reqres.in/" ............................................ passed
+And path "/api/users?page=2" .............................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == 1 .............................................. passed
+Given url "https://reqres.in/" ............................................ passed
+And path "/api/users" ..................................................... passed
+And param page = 2 ........................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.page == 1 .............................................. failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karate10.feature:17 - path: $.page, actual: 2, expected: 1, reason: not equal (Integer)&#13;
+	at ✽.And match response.page == 1 (karate10.feature:17)</failure>
+  </testcase>
+</testsuite>
